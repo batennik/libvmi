@@ -70,7 +70,6 @@ windows_read_unicode_struct_pm(
     if ( buffer_len > max_buffer_len ) {
         dbprint(VMI_DEBUG_READ, "--%s: the length of %" PRIu16 " in the UNICODE_STRING at 0x%" PRIx64 " is greater that max_length %" PRIu16 ", bailing out.\n",
                 __FUNCTION__, buffer_len, ctx->addr, max_buffer_len);
-        return NULL;
     }
 
     // allocate the return value
